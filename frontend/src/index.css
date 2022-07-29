@@ -38,7 +38,6 @@ header a {
 }
 
 .workout-details {
-  width: 1375px;
   background: #fff;
   border: 4px;
   margin: 20px auto;
@@ -66,4 +65,43 @@ header a {
   padding: 6px;
   border-radius: 50%;
   color: #333;
+}
+
+form{
+  background-color: lightgrey;
+  padding: 3pc;
+  width: 300px;
+  margin-top: 1.5pc;
+  border-radius: 0.5pc;
+}
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline-style: none;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 0.5pc;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
 }
