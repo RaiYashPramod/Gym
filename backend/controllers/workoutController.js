@@ -27,7 +27,7 @@ const createWorkout = async (req, res) => {
         console.log(workout);
         return res.status(200).json(workout)
     } catch (error) {
-        res.status(400).json({ error: error.mssg });
+        res.status(400).json({ error: error.message });
     }
     return res.json({ mssg: "Posted a new workout routine" });
 }
