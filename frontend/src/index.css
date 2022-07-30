@@ -68,11 +68,12 @@ header a {
 }
 
 form{
-  background-color: lightgrey;
+  background-color: #eef5ee;
   padding: 3pc;
   width: 300px;
   margin-top: 1.5pc;
   border-radius: 0.5pc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
 label, input {
   display: block;
