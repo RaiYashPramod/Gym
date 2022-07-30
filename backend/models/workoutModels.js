@@ -13,6 +13,9 @@ const workoutSchema = new Schema({
     },
     load: {
         type: Number,
+    },
+    sets: {
+        type: Number,
     }
 }, { timeStamp: true });
 

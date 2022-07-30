@@ -6,12 +6,13 @@ const WorkoutForm = () => {
   const [title, setTitle] = useState('')
   const [load, setLoad] = useState('')
   const [reps, setReps] = useState('')
+  const [sets, setSets] = useState('')
   const [error, setError] = useState(null)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const workout = {title, load, reps}
+    const workout = {title, load, reps, sets}
     
     const response = await fetch('/api/workouts', {
       method: 'POST',
@@ -30,6 +31,7 @@ const WorkoutForm = () => {
       setTitle('')
       setLoad('')
       setReps('')
+      setSets('')
       console.log('new workout added:', json)
       dispatch({type: 'CREATE_WORKOUT', payload: json})
     }
@@ -47,6 +49,9 @@ const WorkoutForm = () => {
             <br />
             <label>Reps: </label>
             <input type="number" onChange={(e) => setReps(e.target.value)} value={reps} />
+            <br />
+            <label>Set: </label>
+            <input type="number" onChange={(e) => setSets(e.target.value)} value={sets} />
             <br />
             <button>Add Workout</button>
             {error && <div className="error">{error}</div>}

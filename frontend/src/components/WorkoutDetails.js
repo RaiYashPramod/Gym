@@ -21,8 +21,9 @@ const WorkoutDetails = ({ workout }) => {
     return(
         <div className="workout-details">
             <h4>{workout.title}</h4>
-            <p><strong>Loads (kg):</strong> {workout.load}</p>
+            <p><strong>Loads (kg):</strong> {workout.load || 0}</p>
             <p><strong>Reps:</strong> {workout.reps}</p>
+            <p><strong>Sets:</strong> {workout.sets}</p>
             <p>{workout.createdAt}</p>
             <span onClick= { handleClick }>Delete</span>
         </div>
