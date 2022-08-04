@@ -56,24 +56,21 @@ header a {
   font-size: 0.9em;
   color: #555;
 }
-.workout-details span {
+.workout-details span svg {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: var(--primary);
   padding: 6px;
-  color: #fff;
-  border-radius: 0.5pc;
+  color: var(--error);
 }
 
 form{
-  background-color: #eef5ee;
   padding: 3pc;
   width: 300px;
   margin-top: 1.5pc;
   border-radius: 0.5pc;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  /* box-shadow: 2px 2px 5px rgba(0,0,0,0.05); */
 }
 label, input {
   display: block;
@@ -106,3 +103,7 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
+input.error {
+  border: 1px solid var(--error);
+}
+
