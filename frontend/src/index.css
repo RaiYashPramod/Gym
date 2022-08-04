@@ -84,6 +84,7 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
   text-decoration: none;
+  font-style: oblique;
   outline-style: none;
 }
 form button {
